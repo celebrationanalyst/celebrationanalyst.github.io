@@ -6,10 +6,22 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/615c163931.js" crossorigin="anonymous"></script>
-        <link href="/cam-tutor/styles.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       
-        <title>Tutor Homepage</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#submit').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value != '') {
+                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting, ' + input.value + '!';
+                    }
+                    else {
+                        document.querySelector('#feedback').innerHTML = 'Thanks for visiting!';
+                    }
+                })
+            })
+        </script>
+        <title>My Homepage</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -28,7 +40,10 @@
                         <a class="nav-link" href="/hobbies.html">Hobbies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/referrals.html">Family</a>
+                        <a class="nav-link" href="/family.html">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/goals.html">Goals</a>
                     </li>
                 </ul>
             </div>
@@ -37,22 +52,25 @@
         <div class="row">
           <div class="leftcolumn">
             <div class="card">
-                <p>Please see calendar for available times. </p>
-                <a href="OKIJBDIFZFWNTUHANIT7LK3CDSI4IL4Q">Calender</a>
-                <a href="eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjIxNjE4MTEzLCJqdGkiOiJkNWUxYjM2ZS1hNzgwLTQ5OWItYTEyNS0xNjRmY2I5ZjRiODgiLCJ1c2VyX3V1aWQiOiJCRkZDV1EyQ0Q1QlJKT0hZIn0.RPqaFd8K_QOb7QquOY_nKmJP59FQizf0sdPnNBUXAIg">Calendar</a>
+                <img src="/images/maskCake.JPG" alt="mask cake" style="height: 450px;">
             </div>
           </div>
           <div class="rightcolumn">
             <div class="card">
-              <h2>Hi everyone! I'm Camden!</h2>
+              <h2>Hi everyone! I'm Krystal!</h2>
               <br>
-              <p>Hello, all. I'm starting my summer tutor program for math.</p>
-              <p>I can cover most middle and high school.</p>
-              <p>I will be a senior next year and am currently enrolled in Calculus(AB)</p>
+              <p>Hello, all. I'm starting my programming career over after 20 years of raising a family. I am loving this class.</p>
+              <p>I can't wait to start working and showing my five boys what this momma can do.</p>
+              <p>Balancing a large family with classes and job searching is tough, but nothing I can't handle.</p>
               <br><br><br>
+              <input placeholder = "First Name" type=text>
+              <button id="submit">Submit</button>
+              <br>
+              <p id="feedback" style="font-size: 18px;"></p>
               <h4 class="wsite-content-title">Connect</h4>
               <div class="paragraph">
-                <a href="http://www.facebook.com/camdenhulme" target="fab fa-facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="http://www.facebook.com/krystalhulme" target="fab fa-facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/krystal-hulme-35b569b3" target="fab fa=linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
                 <br>
               </div>
             </div>
