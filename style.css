@@ -1,5 +1,5 @@
 body {
-    background-color: #EFB1D5;
+    background-color: #8a8889;
     color: #212529;
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #EFB1D5;
+    background-color: #8a8889;
     color: #212529;
     margin-left: auto;
     margin-right: auto;
@@ -89,7 +89,7 @@ input[type="text"]:hover {
 /* Add a card effect for articles */
 
 .card {
-    background-color: #EFB1D5;
+    background-color: #8a8889;
     padding-left: 20px;
     padding-right: 20px;
     height: 450px;
@@ -106,7 +106,7 @@ input[type="text"]:hover {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #EFB1D5;
+  background: #8a8889;
   margin-top: 20px;
 }
 
